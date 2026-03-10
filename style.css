@@ -1,111 +1,323 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 45px;
-    height: 70px;
-    background: black;
+.logo-tech { 
+    color: #fff; 
 }
-.nav-logo {
-     font-size: 1.6rem; 
-     font-weight: 700; 
-    }
-.logo-tech{
-    color: #fff;
-}
-.logo-wave{
+.logo-wave { 
     background: linear-gradient(90deg, #e040fb, #ff4d6d); 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+     background-clip: text; 
+     -webkit-text-fill-color: transparent; 
+    }
+
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 45px; 
+    height: 70px; 
+    background: #0f0d1e; 
 }
-.nav-links{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-logo { 
+    font-size: 1.6rem; 
+    font-weight: 700; 
 }
-.nav-links a{
-    color: #c8c4d8;
-    text-decoration: none;
+.nav-links { 
+    display: flex; 
+    gap: 40px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
 }
-.nav-links a:hover{
-    color: #fff;
+.nav-links a { 
+    color: #c8c4d8; 
+    text-decoration: none; 
 }
-.nav-cta{
-    padding: 10px 24px;
-    border: none;
-    border-radius: 999px;
-    background: linear-gradient(90deg, #f5a623, #e040fb, #ff4d6d);
-    color: #fff;
+.nav-links a:hover { 
+    color: #fff; 
+}
+.nav-cta { 
+    padding: 10px 24px; 
+    border: none; 
+    border-radius: 999px; 
+    background: linear-gradient(90deg, #f5a623, #e040fb, #ff4d6d); 
+    color: #fff; 
+    font-weight: 600; 
+}
+
+.hero { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 60px 20px; 
+    background: url('images/hero-bg.png') center/cover no-repeat; 
+    background-color: #0f0d1e;
+ }
+.mic-circle { 
+    position: relative; 
+    width: 180px; 
+    height: 180px; 
+    margin-bottom: 24px; 
+}
+.mic-circle img:nth-child(1) { 
+    width: 180px; 
+    height: 180px; 
+    border-radius: 50%; 
+}
+.mic-circle img:nth-child(2) {
+     width: 80px; 
+     position: absolute; 
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%, -50%); 
+    }
+.badge-new {
+     position: absolute; 
+     top: 8px; 
+     right: -8px; 
+     background: #00e676; 
+     color: #000; 
+     font-size: 0.7rem; 
+     font-weight: 700; 
+     padding: 4px 10px; 
+     border-radius: 999px; 
+    }
+.hero h1 { 
+    font-size: 3rem; 
+    font-weight: 800; 
+    color: #fff; 
+    margin: 0 0 12px; 
+}
+.hero p { 
+    color: #9e9bb5; 
+    margin-bottom: 32px; 
+}
+.hero-buttons { 
+    display: flex; 
+    gap: 16px; 
+}
+.btn-spotify, .btn-subscribe { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    padding: 12px 24px; 
+    border-radius: 999px; 
     font-weight: 600;
+ }
+.btn-spotify { 
+    border: none; 
+    background: linear-gradient(90deg, #f5a623, #e040fb, #ff4d6d); 
+    color: #fff; 
 }
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 60px 20px;
-    background: black;
+.btn-subscribe { 
+    border: 2px solid #00e676; 
+    background: transparent; 
+    color: #00e676; 
 }
-.mic-circle{
-    position: relative;
-    width: 180px;
-    height: 180px;
-    margin-bottom: 24px;
+
+#about { 
+    background: #0f0d1e; 
+    padding: 60px 48px; 
+    text-align: center; 
 }
-.mic-circle img:nth-child(1){
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+.banner h2 { 
+    font-size: 2.8rem; 
+    font-weight: 800; 
+    color: #fff; 
+    margin-bottom: 16px; 
 }
-.mic-circle img:nth-child(2){
-    width: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.banner p { 
+    color: #9e9bb5; 
+    line-height: 1.7; 
+    max-width: 720px; 
+    margin: 0 auto 12px; 
 }
-.badge-new{
-    position: absolute;
-    top:8px;
-    right: -8px;
-    background: #00e676;
-    color: #000;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 999px;
+.stats { 
+    border-top: 1px solid #2a2740; 
+    margin-top: 40px; 
+    padding-top: 40px; 
+    display: flex; 
+    justify-content: space-around; 
 }
-.hero h1{
-    font-size: 3rem;
-    font-weight: 800;
-    color: #fff;
-    margin: 0 0 12px;
+.stats .card h2 { 
+    font-size: 3rem; 
+    font-weight: 800; 
+    color: #00e676; 
+    margin-bottom: 8px; 
 }
-.hero p{
-    color: #9e9bb5;
-    margin-bottom: 32px;
+.stats .card p { 
+    font-size: 0.8rem; 
+    color: #9e9bb5; 
+    letter-spacing: 1px; 
 }
-.hero-buttons{
-    display: flex;
-    gap: 16px;
+
+#why { 
+    background: #0f0d1e; 
+    padding: 60px 48px; 
+    text-align: center; 
 }
-.btn-spotify, .btn-subscribe{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    border-radius: 999px;
-    font-weight: 600;
+#why h2 { 
+    font-size: 2.8rem; 
+    font-weight: 800; 
+    color: #fff; 
+    margin-bottom: 40px; 
 }
-.btn-spotify{
-    border: none;
-    background: linear-gradient(90deg, #f5a623, #e040fb, #ff4d6d);
-    color: #fff;
+.features { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    text-align: left; 
 }
-.btn-subscribe{
-    border: 2px solid #00e676;
-    background: transparent;
-    color: #00e676;
+.card { 
+    background: #1a1730; 
+    border-radius: 16px; 
+    padding: 30px; 
+}
+.features .card img { 
+    width: 40px; 
+    margin-bottom: 16px; 
+}
+.card h5 { 
+    font-weight: 700; 
+    color: #fff; 
+    margin-bottom: 10px; 
+}
+.features .card p { 
+    color: #9e9bb5; 
+    line-height: 1.7; 
+}
+.features .card:nth-child(1) {
+     grid-row: span 2; 
+    }
+
+#episodes { 
+    background: #0f0d1e; 
+    padding: 60px 48px; 
+    text-align: center; 
+}
+#episodes h2 { 
+    font-size: 2.8rem; 
+    font-weight: 800; 
+    color: #fff; 
+    margin-bottom: 40px; 
+}
+#episodes .card { 
+    display: inline-block; 
+    background: #1a1730; 
+    border-radius: 16px; 
+    padding: 0; 
+    width: 30%; 
+    margin: 0 1%; 
+    text-align: left; 
+    vertical-align: top; 
+}
+#episodes .card iframe {
+     width: 100%; 
+     height: 200px; 
+     border-radius: 12px 12px 0 0; 
+     border: none; 
+    }
+#episodes .card h3 { 
+    font-size: 1.1rem; 
+    font-weight: 700; 
+    color: #fff; 
+    margin: 16px 16px 8px; 
+}
+#episodes .card p { 
+    color: #9e9bb5; 
+    line-height: 1.6; 
+    margin: 0 16px 12px; 
+}
+#episodes .card img { 
+    width: 16px; 
+    vertical-align: middle; 
+    margin: 0 16px 16px 16px; 
+}
+
+.host { 
+    background: #0f0d1e;
+    padding: 60px 48px; 
+    text-align: center; 
+}
+.host h2 { 
+    font-size: 2.8rem; 
+    font-weight: 800; 
+    color: #fff; 
+    margin-bottom: 40px; 
+}
+.host-card { 
+    background: #1a1730; 
+    border-radius: 16px; 
+    padding: 40px; 
+    display: flex; 
+    align-items: center; 
+    gap: 32px; 
+    text-align: left; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+.host-card img { 
+    width: 140px; 
+    height: 140px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.host-card h3 { 
+    font-size: 1.6rem; 
+    font-weight: 700; 
+    color: #fff; 
+    margin-bottom: 12px; 
+}
+.host-card p { 
+    color: #9e9bb5; 
+    line-height: 1.7; 
+    margin-bottom: 20px; 
+}
+.social-icons { 
+    display: flex; 
+    gap: 12px; 
+}
+.social-icons a { 
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%; 
+    border: 1px solid #3a3660; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+ }
+.social-icons img { 
+    width: 16px; 
+    height: 16px; 
+}
+
+footer { 
+    padding: 60px 48px; 
+    text-align: center; 
+    background: url('images/footer-bg.png') center/cover no-repeat;
+    background-color: #0f0d1e;
+}
+footer h1 { 
+    font-size: 3rem; 
+    font-weight: 800; 
+    margin-bottom: 20px; 
+}
+.footer-links { 
+    display: flex; 
+    justify-content: center; 
+    gap: 32px; 
+    margin-bottom: 24px; 
+}
+.footer-links a { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    color: #fff; 
+    text-decoration: none; 
+}
+.footer-links a img { 
+    width: 18px; 
+}
+footer p { 
+    color: #9e9bb5; 
+    font-size: 0.85rem; 
 }
