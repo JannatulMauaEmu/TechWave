@@ -13,17 +13,17 @@
 
     <!-- ========== HEADER ========== -->
     <header>
-        <div>
-            <nav>
-                <img src="images/logo.png" alt="Logo">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#episodes">Episodes</a></li>
-                    <li><a href="#host">Host</a></li>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <span class="logo-tech">Tech</span><span class="logo-wave">Wave</span>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
                 </ul>
-                <button>Subscribe</button>
-            </nav>
-        </div>
+                <button class="nav-cta">Subscribe &#8594;</button>
+        </nav>
     </header>
 
     <!-- ========== MAIN CONTENT ========== -->
@@ -31,13 +31,24 @@
 
         <!-- Hero Section -->
         <div class="hero">
-            <img src="images/hero-circle.png" alt="Hero Circle">
-            <img src="images/microphone.png" alt="Microphone">
-            <h1>TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <button><img src="images/spotify.png" alt="Spotify Logo"> Listen On Spotify</button>
-            <button><img src="images/message.png" alt="Message Icon"> Subscribe</button>
-        </div>
+
+  <!-- Wrap both images so mic overlays the circle -->
+  <div class="mic-circle">
+    <img src="images/hero-circle.png" alt="Hero Circle">
+    <img src="images/microphone.png" alt="Microphone">
+    <span class="badge-new">NEW</span>
+  </div>
+
+  <h1>TechWave</h1>
+  <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+  <!-- Wrap buttons so they sit side by side -->
+  <div class="hero-buttons">
+    <button class="btn-spotify"><img src="images/spotify.png" alt="Spotify"> Listen On Spotify</button>
+    <button class="btn-subscribe"><img src="images/message.png" alt="Message"> Subscribe</button>
+  </div>
+
+</div>
 
         <!-- About Section -->
         <section id="about">
@@ -129,8 +140,7 @@
     </main>
 
     <!-- ========== FOOTER / HOST SECTION ========== -->
-    <footer id="host">
-        <div>
+        <div class="host">
             <h2>Meet The Host</h2>
             <img src="images/host.png" alt="Host Alex Kumar">
             <h3>Alex Kumar</h3>
@@ -149,6 +159,15 @@
             <a href="https://facebook.com/yourusername" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
             </a>
+        </div>
+    <footer>
+        <div>
+            <h1>TechWave</h1>
+            <img src="images/spotify.png"> Spotify
+            <img src="images/apple-podcast.png"> Apple Podcasts 
+            <img src="images/youtube-podcast.png">   YouTube
+            <img src="images/twitter.png"> Twitter
+            <p>&copy 2026 TechWave Podcast.All rights reserved.</p>
         </div>
     </footer>
 
